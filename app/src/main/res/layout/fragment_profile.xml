@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <!-- Кнопка выхода в правом верхнем углу -->
+    <ImageButton
+        android:id="@+id/logout_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/exit"
+        android:tint="#757575"
+        android:scaleType="centerInside"
+        android:contentDescription="Logout"/>
+
+    <!-- Заголовок "Профиль" -->
+    <TextView
+        android:id="@+id/profile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Профиль"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Круглый аватар -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/profile_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/person"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"/>
+
+    <!-- Имя пользователя -->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Иванов Дмитрий Евгеньевич"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Пункт меню "Личная информация" -->
+    <Button
+        android:id="@+id/personal_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Сохраненные объявления"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="start"
+        android:drawablePadding="8dp"
+        android:drawableRight="@drawable/ic_menu_arrow_rightt" />
+
+    <!-- Пункт меню "Привязанные адреса" -->
+    <!--<Button
+        android:id="@+id/addresses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_info"
+        android:padding="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Привязанные адреса"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="start"
+        android:drawablePadding="8dp"
+        android:drawableRight="@drawable/ic_menu_arrow_rightt"
+        />
+
+    &lt;!&ndash; Пункт меню "Способы оплаты" как кнопка &ndash;&gt;
+    <Button
+        android:id="@+id/payment_methods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addresses"
+        android:padding="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Способы оплаты"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="start"
+        android:drawablePadding="8dp"
+        android:drawableRight="@drawable/ic_menu_arrow_rightt"
+        />-->
+
+</RelativeLayout>

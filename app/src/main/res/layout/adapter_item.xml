@@ -1,0 +1,99 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:descendantFocusability = "blocksDescendants">
+
+
+    <!-- Текстовая часть -->
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/heart_icon"
+        android:orientation="vertical"
+        android:descendantFocusability = "blocksDescendants">
+
+        <!-- Дата "Сейчас просматривают 14 чел." -->
+        <TextView
+            android:id="@+id/users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Создатель объявления: "
+            android:textSize="14sp"
+            android:textColor="#757575" />
+
+        <!-- Заголовок "Корректор" -->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Корректор"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginTop="4dp" />
+
+        <!-- Место "Владивисток" -->
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Владивисток"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginTop="4dp" />
+
+        <!-- Даты "Опыт от 1 года до 3 лет" и "Опубликовано 14 ноября" -->
+        <TextView
+            android:id="@+id/requirements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Опыт от 1 года до 3 лет"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оплата: "
+            android:textSize="14sp"
+            android:textColor="#757575" />
+    </LinearLayout>
+
+    <!-- Иконка сердечка -->
+
+    <!-- Кнопка "Откликнуться" -->
+
+    <ImageButton
+        android:id="@+id/heart_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/btn_star_big_off"
+        android:tint="#757575"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"/>
+
+    <Button
+        android:id="@+id/click_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Откликнуться"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#4CAF50"
+        android:layout_below="@id/text_container"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"/>
+
+</RelativeLayout>

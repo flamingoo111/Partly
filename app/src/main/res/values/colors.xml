@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Основные цвета -->
+    <color name="primary">#00BFA5</color>  <!-- Яркий бирюзовый -->
+    <color name="primary_dark">#00897B</color>
+    <color name="accent">#FF4081</color>   <!-- Розовый акцент -->
+    <color name="background">#F5F9FB</color> <!-- Светло-голубой фон -->
+
+    <!-- Панели -->
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#FF5252</color>
+
+    <!-- Текст -->
+    <color name="text_primary">#263238</color> <!-- Темно-серый -->
+    <color name="text_secondary">#78909C</color> <!-- Серо-голубой -->
+
+    <!-- Элементы UI -->
+    <color name="divider">#E0E0E0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="bottom_nav_text">#FFFFFF</color>
+    <color name="icon_active">#FF4081</color> <!-- Розовый цвет для активной кнопки -->
+    <color name="icon_inactive">#808080</color> <!-- Серый цвет для неактивных кнопок -->
 </resources>

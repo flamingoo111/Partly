@@ -35,6 +35,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <ImageView
+            android:id="@+id/picture_of_login"
             android:layout_width="246dp"
             android:layout_height="193dp"
             android:layout_gravity="center"
@@ -42,11 +43,10 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <fragment
+        <FrameLayout
             android:id="@+id/fragment_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:layout="@layout/login_fragment"
-            android:name="com.example.myapplication.LoginFragment"/>
+            android:layout_weight="3" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
